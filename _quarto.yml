@@ -3,12 +3,12 @@ project:
 
 book:
   title: "Introducción al Píxel"
-  author: "Norah Jones"
-  date: "29/3/2026"
+  author: "Luis Mendoza"
   chapters:
     - index.qmd
     - intro.qmd
     - introLibresprite.qmd
+    - spriteSheets.qmd
     - summary.qmd
     - references.qmd
 

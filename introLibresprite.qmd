@@ -30,10 +30,14 @@ De nuevo, movamos el cursor sobre la segunda capa hasta que cambie a una cruz o 
 
 Ya se había mencionado que a la izquierda de la Vista tenemos la paleta de colores. Pues bien, borremos todo lo hecho, incluso la capa 2 mediante clic derecho sobre la misma y luego *Eliminar*. Entonces nos dirigimos a la paleta. Sobre ella podemos ver unos cuantos botones: *Editar Color*, *Ordenar*, *Ajustes preestablecidos* y *Opciones*. El tercero nos permite cargar algunas paletas que el programa incluye, siendo la llamada *GameBoy Color Type-1* la que usaremos. La seleccionamos y clicamos en *Load*.
 
+## Hagamos un simple sprite
+
 Elijamos con clic el color verde que se encuentra en la segunda fila y tercera columna de arriba hacia abajo (2,3). Pintemos la parte superior del lienzo con este color, pero de manera irregular. Lo que queremos es crear un mosaico de pasto.
 
-Toca otro color. Elijamos el café medio que se encuentra en (4,3). En lugar de pintar todo lo restante del lienzo con el lápiz podemos ahorrarnos algo de tiempo si presionamos {{<kbd U>}} un par de veces. Esto nos dejará dibujar un rectángulo relleno con el color elegido. Retocamos a mano con el lápiz presionando {{<kbd B>}} y listo.
+Toca otro color. Elijamos el café medio que se encuentra en (5,2). En lugar de pintar todo lo restante del lienzo con el lápiz podemos ahorrarnos algo de tiempo si presionamos {{<kbd U>}} un par de veces. Esto nos dejará dibujar un rectángulo relleno con el color elegido. Retocamos a mano con el lápiz presionando {{<kbd B>}} y listo.
 
-Por último, elegimos el café oscuro de (5,2). Pintamos los píxeles que forman el borde entre el verde y el primer café y unos cuantos detalles. Listo, ya tenemos nuestra baldosa de césped.
+Por último, elegimos el café oscuro de (4,4). Pintamos los píxeles que forman el borde entre el verde y el primer café y unos cuantos detalles o sombras. Listo, ya tenemos una baldosa que representa el césped.
+
+Hay que guardar nuestro trabajo, lo cual hacemos con *Archivo -> Guardar* o mejor aún, presionando {{<kbd Ctrl+S>}}.
 
 
