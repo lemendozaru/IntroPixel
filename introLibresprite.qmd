@@ -1,0 +1,13 @@
+# Introducción a LibreSprite
+
+En este capítulo nos acercaremos al modo de comenzar una creación de arte píxel utilizando el programa LibreSprite. Quizá se piense que existan aplicaciones más potentes. Y puede que sea así, pero LibreSprite cumple con lo que promete: facilitar el trabajo con los píxeles, directo, sin tener que configurar demasiadas cosas. Comencemos.
+
+## La interfaz
+
+Abramos LibreSprite. Lo primero que haremos será cambiar el idioma a español, a través de *Editar -> Preferencias* y en la categoría *General* viene la propiedad *Language*. Pues ahí la cambiamos a español, cerramos el programa y al abrirlo de nuevo ya estará traducido.
+
+Ahora a crear el primer documento. Damos clic en *Archivo nuevo* o, mejor aún, presionamos el atajo {{<kbd Ctrl+N>}}. Aparece una ventana que nos pide las medidas de lo que haremos. Cambiamos el ancho y la altura a `20` px. Lo dejamos en *RGBA* con el *Fondo* transparente y clicamos en *Aceptar* (o presionamos {{<kbd Alt+A>}}).
+
+Veremos que tenemos varias secciones en el programa. Primero enfoquémonos en la Vista, que es la del centro y la principal. Hay un cuadradito pequeño ahí. Lo podemos hacer más grande con la rueda del ratón. Hagámoslo. Así es como se acerca o aleja la Vista. Si presionamos la rueda del ratón podemos mover el lienzo.
+
+Ahora veamos al lado derecho de la Vista. Tenemos ahí al conjunto de herramientas de LibreSprite. Un ojo al lápiz y el borrador, cuyos atajos son {{<kbd B>}} y {{<kbd E>}}, respectivamente. Si pasamos el cursor encima de estos botones se nos dirá en un recuadro bastante llamativo cuál es su función y su atajo. El lápiz nos permite dibujar y el borrador pues eso, borra.
