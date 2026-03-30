@@ -1,0 +1,21 @@
+# Sprite de un personaje
+
+Vamos a crear el sprite de un personaje para posteriormente animarlo, pero ahora lo haremos en otro programa. Comencemos.
+
+## Creando el sprite
+
+Abrimos un nuevo proyecto de `29x14` px, en escala de grises y fondo transparente. Lo dejamos en escala de grises ya que al ser un sprite que va directo a un videojuego, el motor normalmente puede aplicar los cambios de color usando sus propias herramientas. Claro que esto queda a decisión personal.
+
+Un personaje en arte píxel no tiene por qué tener proporciones realistas. Así que dibujaremos uno cuya cabeza sea aproximadamente la mitad del cuerpo. Seleccionamos el lápiz {{<kbd B>}} y escogemos un gris medio como color de píxel.
+
+Al terminar de dibujarlo pasamos a rellenar el personaje con un gris más claro mediante el cubo de pintura {{<kbd G>}}. Si notamos que solo pinta un píxel, debemos desmarcar la opción *Stop at grid* que se encuentra en las opciones adicionales de la herramienta (arriba de la Vista).
+
+Luego, con un gris aún más claro agregamos algunos detalles al personaje.
+
+## Agregando más cuadros al personaje
+
+Duplicamos la capa y la movemos a la derecha. Enseguida borramos el pie izquierdo del personaje y agregamos un píxel del mismo color del contorno para cerrar la figura.
+
+Dupliquemos de nuevo la primera capa y la movemos al extremo derecho. Ahora le borramos el pie derecho al personaje, realizando el mismo retoque. Listo, ya podemos guardar nuestro sprite y exportarlo a `png`.
+
+![Hoja de sprites del personaje.](multimedia/character.png){width=25%}

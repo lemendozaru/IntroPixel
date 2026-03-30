@@ -16,7 +16,7 @@ Al lado izquierdo está la paleta de colores con algunos predefinidos y la opci�
 
 Por último, en la parte superior de la Vista se encuentran los modificadores del pincel. De momento el que nos interesa de antemano es el algoritmo *Pixel-perfect*. Activémoslo.
 
-Pero no nos perdamos mucho en las herramientas. Hay que realizar ciertos ajustes aún en la Vista. Vamos a *Ver -> Mostrar -> Cuadrícula de píxeles* o {{<kbd Alt+Mayus+G>}}. Eso hará que el lienzo muestre los píxeles que lo conforman, aunque todavía no de la mejor manera. Volvemos a *Ver -> Cuadrícula -> Configuración de cuadrícula* y cambiamos tanto el ancho como la altura a `1`. Falta un ajuste. Presionemos {{<kbd Ctrl+K>}} y en la categoría *Cuadrícula y fondo* cambiamos el tamaño del fondo cuadriculado a `2x2`.
+Pero no nos perdamos mucho en las herramientas. Hay que realizar ciertos ajustes aún en la Vista. Vamos a *Ver -> Mostrar -> Cuadrícula de píxeles* o {{<kbd Alt+Mayus+G>}}. Eso hará que el lienzo muestre los píxeles que lo conforman, aunque todavía no de la mejor manera. Volvemos a *Ver -> Cuadrícula -> Configuración de cuadrícula* y cambiamos tanto el ancho como la altura a `1`. Falta un ajuste. Presionemos {{<kbd Ctrl+K>}} y en la categoría *Cuadrícula y fondo* cambiamos el tamaño del fondo cuadriculado a `2x2`. Podemos guardar esto como una configuración global si en el menú superior lo dejamos tal cual, `Global`.
 
 ## Las capas
 

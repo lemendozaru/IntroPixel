@@ -9,6 +9,8 @@ book:
     - intro.qmd
     - introLibresprite.qmd
     - spriteSheets.qmd
+    - playerSprite.qmd
+    - fondo.qmd
     - summary.qmd
     - references.qmd
 
