@@ -4,10 +4,36 @@ En este capítulo nos acercaremos al modo de comenzar una creación de arte píx
 
 ## La interfaz
 
-Abramos LibreSprite. Lo primero que haremos será cambiar el idioma a español, a través de *Editar -> Preferencias* y en la categoría *General* viene la propiedad *Language*. Pues ahí la cambiamos a español, cerramos el programa y al abrirlo de nuevo ya estará traducido.
+Abramos LibreSprite. Lo primero que haremos será cambiar el idioma a español, a través de *Editar -> Preferencias* o {{<kbd Ctrl+K>}} y en la categoría *General* viene la propiedad *Language*. Pues ahí la cambiamos a español, cerramos el programa y al abrirlo de nuevo ya estará traducido.
 
-Ahora a crear el primer documento. Damos clic en *Archivo nuevo* o, mejor aún, presionamos el atajo {{<kbd Ctrl+N>}}. Aparece una ventana que nos pide las medidas de lo que haremos. Cambiamos el ancho y la altura a `20` px. Lo dejamos en *RGBA* con el *Fondo* transparente y clicamos en *Aceptar* (o presionamos {{<kbd Alt+A>}}).
+Ahora a crear el primer documento. Damos clic en *Archivo nuevo* o, mejor aún, presionamos el atajo {{<kbd Ctrl+N>}}. Aparece una ventana que nos pide las medidas de lo que haremos. Cambiamos el ancho y la altura a `16` px. Lo dejamos en *RGBA* con el *Fondo* transparente y clicamos en *Aceptar* (o presionamos {{<kbd Alt+A>}}).
 
 Veremos que tenemos varias secciones en el programa. Primero enfoquémonos en la Vista, que es la del centro y la principal. Hay un cuadradito pequeño ahí. Lo podemos hacer más grande con la rueda del ratón. Hagámoslo. Así es como se acerca o aleja la Vista. Si presionamos la rueda del ratón podemos mover el lienzo.
 
-Ahora veamos al lado derecho de la Vista. Tenemos ahí al conjunto de herramientas de LibreSprite. Un ojo al lápiz y el borrador, cuyos atajos son {{<kbd B>}} y {{<kbd E>}}, respectivamente. Si pasamos el cursor encima de estos botones se nos dirá en un recuadro bastante llamativo cuál es su función y su atajo. El lápiz nos permite dibujar y el borrador pues eso, borra.
+Ahora veamos al lado derecho de la Vista. Tenemos ahí al conjunto de herramientas de LibreSprite. Un ojo al lápiz y el borrador, cuyos atajos son {{<kbd B>}} por "brush" y {{<kbd E>}} por "eraser", respectivamente. Si pasamos el cursor encima de estos botones se nos dirá en un recuadro bastante llamativo cuál es su función y su atajo. El lápiz nos permite dibujar y el borrador pues eso, borrar.
+
+Al lado izquierdo está la paleta de colores con algunos predefinidos y la opción de crear otros adicionales. Si deseamos cambiar de color del pincel, damos clic izquierdo en el color de la paleta que deseemos que sea el primario. Así, cada que demos clic en el lienzo pintará el píxel del color que elegimos. Por otro lado, si damos clic derecho en un color, este se vuelve el color secundario, lo que implica que cualquier clic derecho en el lienzo pintará un píxel de ese color.
+
+Por último, en la parte superior de la Vista se encuentran los modificadores del pincel. De momento el que nos interesa de antemano es el algoritmo *Pixel-perfect*. Activémoslo.
+
+Pero no nos perdamos mucho en las herramientas. Hay que realizar ciertos ajustes aún en la Vista. Vamos a *Ver -> Mostrar -> Cuadrícula de píxeles* o {{<kbd Alt+Mayus+G>}}. Eso hará que el lienzo muestre los píxeles que lo conforman, aunque todavía no de la mejor manera. Volvemos a *Ver -> Cuadrícula -> Configuración de cuadrícula* y cambiamos tanto el ancho como la altura a `1`. Falta un ajuste. Presionemos {{<kbd Ctrl+K>}} y en la categoría *Cuadrícula y fondo* cambiamos el tamaño del fondo cuadriculado a `2x2`.
+
+## Las capas
+
+Comencemos dibujando algo con píxeles de color negro. Para ello seleccionamos dicho color en la paleta con un clic. Luego vayamos a *Capa -> Nueva Capa* o {{<kbd Ctrl+Mayus+N>}}. Aparecerá un panel debajo de la Vista. Movamos la ventana de *Preview* para dejarle el espacio visible. Este panel recién aparecido es el editor de capas.
+
+Seleccionemos *Layer2* (es la capa que recién creamos) y dibujemos cualquier cosa con el clic derecho. De preferencia que quede por encima del anterior trazo con píxeles negros. Bien, al terminar demos clic en el "ojo" a la izquierda de *Layer2*. Lo que acabamos de dibujar ha desaparecido, o más bien, lo hemos vuelto invisible. Si volvemos a activar el "ojo" volverá a aparecer.
+
+De nuevo, movamos el cursor sobre la segunda capa hasta que cambie a una cruz o la capa se resalte con un recuadro amarillo. Eso significa que podemos mover la capa completa. Arrastrémosla hacia abajo de la primera capa. Ahora se habrá ido al fondo y lo que dibujamos de color blanco se queda por debajo del color negro. Es importante tener en cuenta esto: las capas que están abajo en el editor también lo están en el lienzo.
+
+## La paleta de colores
+
+Ya se había mencionado que a la izquierda de la Vista tenemos la paleta de colores. Pues bien, borremos todo lo hecho, incluso la capa 2 mediante clic derecho sobre la misma y luego *Eliminar*. Entonces nos dirigimos a la paleta. Sobre ella podemos ver unos cuantos botones: *Editar Color*, *Ordenar*, *Ajustes preestablecidos* y *Opciones*. El tercero nos permite cargar algunas paletas que el programa incluye, siendo la llamada *GameBoy Color Type-1* la que usaremos. La seleccionamos y clicamos en *Load*.
+
+Elijamos con clic el color verde que se encuentra en la segunda fila y tercera columna de arriba hacia abajo (2,3). Pintemos la parte superior del lienzo con este color, pero de manera irregular. Lo que queremos es crear un mosaico de pasto.
+
+Toca otro color. Elijamos el café medio que se encuentra en (4,3). En lugar de pintar todo lo restante del lienzo con el lápiz podemos ahorrarnos algo de tiempo si presionamos {{<kbd U>}} un par de veces. Esto nos dejará dibujar un rectángulo relleno con el color elegido. Retocamos a mano con el lápiz presionando {{<kbd B>}} y listo.
+
+Por último, elegimos el café oscuro de (5,2). Pintamos los píxeles que forman el borde entre el verde y el primer café y unos cuantos detalles. Listo, ya tenemos nuestra baldosa de césped.
+
+
