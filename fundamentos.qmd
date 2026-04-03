@@ -1,0 +1,48 @@
+# Fundamentos del arte píxel
+
+Definiendo primero lo que entendemos por un píxel. Es solo un cuadrito en la pantalla. Es tan pequeño que pasa desapercibido por sí mismo, pero en conjunto dibuja todo lo que vemos en pantalla. Sin embargo, hace unos 40 años se utilizaban para crear videojuegos que, por las limitaciones de la época, tenían muy poca resolución. Y esa es la clave, las bajas resoluciones. Podemos trabajar hoy en día perfectamente con píxeles y seguir transmitiendo lo mismo que un videojuego realista, si sabemos cómo hacerlo, claro está.
+
+Trabajemos con píxeles.
+
+## Tamaño del arte píxel
+
+Este se encontraba condicionado por las capacidades de los dispositivos para los que estaban diseñados los juegos. Por ejemplo, el **GameBoy** de Nintendo y el **GameGear** de Sega tenían una resolución de `160x144` px. Es decir, estas máquinas podían mostrar en pantalla, teóricamente, hasta 160 píxeles a lo ancho y hasta 144 a lo alto. Por otro lado, la máquina con mayor resolución de 16 bits fue la **Genesis** de Sega, la cual podía entregar 320 píxeles a lo ancho y 224 a lo alto. Casi el doble. Esto hacía que los artistas tuvieran que adaptarse a lo que iba surgiendo en la industria.
+
+Cabe mencionar que esa capacidad de la que hablamos se refiere a lo téorico. En la realidad, esas medidas tenían que distribuirse entre fondos, personajes y objetos, por decir lo menos. Esto implicaba saber bien de qué tamaño deberían ser los distintos elementos y, hasta cierto punto, estandarizarlos.
+
+Vayamos a un buen ejemplo: **Pokemon Red** para el GameBoy. Sabemos que teníamos una pantalla casi cuadrada cuyas medidas sugerían utilizar múltiplos de `16` en los elementos que quisiéramos dibujar. Así que esa fue la decisión sensata, los objetos en este juego tienen 16 px de altura.
+
+Pero el tamaño no es lo único que importa. Debemos considerar también cuántos colores tenemos a disposición. Por ejemplo, se sabe que la **NES** tenía una resolución de `256x240` px, mientras que la **SNES** entregaba pantallas de `256x224`. Si la resolución de la primera es mayor, ¿por qué se ven mucho mejores los de la segunda? Por la cantidad de colores que se podían mostrar. La primera solo podía entregar una estimación de `25` simultáneos. Pero la segunda era capaz de conseguir hasta `256` colores a la vez. Más de díez veces. Eso explica lo ricos y detallados que podían verse juegos como **Chrono Trigger**, por ejemplo.
+
+Lo que nos lleva a lo siguiente, en máquinas de 8 bits era común que los elementos en pantalla tuvieran tamaños de 16 px casi por obligación. Incluso el Mario del NES tenía esa altura. Ya en el SNES los tamaños variaron bastante, teniendo un Link de **A Link to the Past** de 22 px, pasando por un Megaman de 24 y el propio Mario de **Super Mario World**, ahora ya de 27 px. Estos juegos debían manejar personajes que se enfocarán en dos o tres detalles y permanecían simples.
+
+Pero en el SNEs podía haber mayor variedad. Por ejemplo, Samus de **Super Metroid** tuvo 48 px de altura y era un personaje con mucho detalle, sobretodo porque lleva una armadura cuya paleta de colores es de hasta 15 de ellos. Otro ejemplo de variedad es que el Megaman de juegos más recientes y el Lupin de **Lupin the Third** tienen el mismo tamaño de cabeza e incluso están dibujados con un estilo similar pero tienen 34 y 62 px de altura, respectivamente. ¿Qué los diferencia? ¿Por qué no hay un estándar? Porque las máquinas contemporáneas ya permitían manejar estilos de arte diferentes al ya no estar tan limitadas en cuanto a colores.
+
+Con juegos más cercanos temporalmente se repite el hecho de que no hay un tamaño estandarizado. Por ejemplo, la Chun Li de **Street Fighter II** tiene 75 px de altura. Pero estaba pensada para una plataforma muy diferente, el arcade. Este no tenía las limitaciones de una consola casera.
+
+Entonces, ¿cuál es la conclusión? Primero se debe definir la resolución con la que se trabajará, luego se decide el estilo visual y artístico y con base en ello, decidimos el tamaño de nuestros elementos de arte píxel. Un buen acercamiento es manejar siempre múltiplos de la resolución, como en el caso del GameBoy.
+
+## Las líneas en el arte píxel
+
+Una línea es la proyección de un punto a lo largo de un eje. En el arte píxel seguimos esto a rajatabla: una línea de píxeles es la proyección de uno y solo un píxel a lo largo de una eje.
+
+### Los dobles
+
+Cuando dibujemos líneas debemos evitar los "dobles". Las líneas solo deben componerse de un píxel por segmento. Algunos programas como LibreSprite cuentan con una opción llamada *Pixel Perfect* que elimina automáticamente los "dobles".
+
+### Los dientes de sierra
+
+Otro punto a evitar son los "jaggies" o dientes de sierra. Se refiere a píxeles que, si bien cumplen con el punto anterior al ser únicos por segmento, se ven como si hubieran sido puestos de manera aleatoria al formar la línea. La mejor manera de evitarlos es utilizar segmentos que sigan el ángulo de la línea general pero escalonados de manera ordenada o constante. Podemos usar ángulos con inclinaciones de 1 hasta 5 px juntos. Por ejemplo.
+
+### Ángulos de unión
+
+Si deseamos unir dos líneas que tienen el mismo ángulo de inclinación, podemos hacerlo con el mismo número de píxeles en los segmentos que vienen formando dicho ángulo o incluso el doble.
+
+### Las curvas
+
+Las líneas curvas también siguen las mismas reglas que las rectas. No deben tener píxeles dobles ni dientes de sierra. Las curvas deben conseguirse con segmentos constantes, crecientes y/o decrecientes para formar la curva en sí. Por ejemplo, contar con segmentos iguales y escalonados para formar la curva; o comenzar un extremo con segmentos de tres píxeles, luego de dos y al final uno solo y continuar el siguiente extremo con la misma lógica pero invertida, un píxel, luego segmentos de dos y al final de tres.
+
+La misma dinámica funciona bien con los círculos, aunque estos pueden ser un poco problemáticos en resoluciones bajas.
+
+Recordemos, hay que eliminar la sensación de aleatoriedad en el trazo de nuestras líneas y los píxeles dobles.
+

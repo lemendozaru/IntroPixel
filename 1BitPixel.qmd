@@ -1,0 +1,3 @@
+# Arte píxel de 1-Bit
+
+No contentos con las actuales limitaciones "autoimpuestas" del arte píxel, existe un tipo aún más restringido: el de 1-Bit. Este solo

@@ -7,10 +7,13 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - fundamentos.qmd
     - introLibresprite.qmd
     - spriteSheets.qmd
     - playerSprite.qmd
     - fondo.qmd
+    - baseColor.qmd
+    - 1BitPixel.qmd
     - summary.qmd
     - references.qmd
 

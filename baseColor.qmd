@@ -1,0 +1,28 @@
+# El color en los píxeles
+
+Se sigue guiando por los fundamentos del coloreado de toda la vida, pero tiene unos puntos a destacar. Por principio de cuentas, para crear un color base más claro o más oscuro, debe cambiar el color, no solamente el brillo.
+
+## Los componentes del color
+
+Debemos considerar lo anterior. Los colores más claros deben tender hacia el amarillo, mientras los más oscuros deben acercarse al púrpura. Con eso en mente, pasemos a hablar de los componentes del color en los típicos programas de dibujo y pintura.
+
+Si bien muchos de estos programas utilizan el sistema **RGB** por defecto (componentes rojo, verde y azul), otros pueden usar el **HSB**, el cual consiste de *Hue* (el color en sí); *Saturation* (la intensidad del color); y *Brightness* (el brillo u oscuridad del color).
+
+Para entender la diferencia, vamos a juguetear un poco con LibreSprite. A la izquierda, justo encima de la paleta de colores, tenemos un botón llamado *Editar color*. Lo clicamos y aparecerá el editor de paletas de color. Por defecto está en modo RGB pero podemos cambiarlo dando clic al botón que está al lado y que pone *HSB*.
+
+Vamos a generar unos cuantos colores manipulando las barras que muestra el editor. Primero partamos de un rojo, conseguido con los valores de color *H* = `0`, saturación *S* = `65` y brillo *B* = `80`. ¿Para dónde irá el color si aumentamos el brillo?
+
+¿Qué pasa si aclaramos el rojo? Para conseguirlo hay que dejar la *H* en `25`, bajar un poco la saturación (`60`) y bajar el brillo (`90`).
+
+Sigamos cambiando el color. Subamos un poco la *H* (`35`), bajemos la *S* a `50` y subamos ligeramente la *B* (`95`). ¿Cuál color resulta?
+
+Ahora llevemos *H* a `45` esta vez, *S* a `25`  y subamos *B* al máximo. ¿Qué color hemos desbloqueado?
+
+Vayamos al extremo. Hagamos el color más brillante. Notemos que la *H* se puede quedar en `0` o el valor que queramos. Pero *S* se va a `0`. Y el brillo lo mandamos a `100`. Y listo, el color más brillante es el blanco. Quizá ya lo sabíamos, pero lo importante acá es el color a donde iba la paleta conforme ibamos aclarando el rojo: el amarillo.
+
+Podríamos partir del mismo rojo y comenzar a disminuir el brillo a la vez que aumentamos poco a poco la saturación. El color a donde se irá la paleta es el púrpura.
+
+Lo anterior funciona muy bien con el rojo, ¿pero qué pasa con el azul? ¿también tiende al amarillo? Pues sí, con "matices". Es decir, sabemos que si mezclamos azul con amarillo surge el verde. Y si vamos incrementando el brillo y bajamos la saturación del azul, pues invariablemente llegamos a colores verdes.
+
+Esto que hemos visto es el cambio de tonalidad o "hue shifting". No profundizaré demasiado en esto, pero así se puede buscar para empaparse un poco más.
+
